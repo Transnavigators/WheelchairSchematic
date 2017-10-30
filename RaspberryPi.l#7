@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -470,6 +470,21 @@
 <hole x="6.35" y="3.81" drill="0.35"/>
 <hole x="6.35" y="-3.81" drill="0.35"/>
 </package>
+<package name="ENCODER_A6B2">
+<pad name="P$1" x="-2.54" y="2.54" drill="0.6" shape="square"/>
+<pad name="P$2" x="-2.54" y="0" drill="0.6" shape="square"/>
+<pad name="P$3" x="-2.54" y="-2.54" drill="0.6" shape="square"/>
+<pad name="P$4" x="2.54" y="2.54" drill="0.6" shape="square"/>
+<pad name="P$5" x="2.54" y="0" drill="0.6" shape="square"/>
+<pad name="P$6" x="2.54" y="-2.54" drill="0.6" shape="square"/>
+<hole x="-2.54" y="-2.54" drill="0.35"/>
+<hole x="-2.54" y="0" drill="0.35"/>
+<hole x="-2.54" y="2.54" drill="0.35"/>
+<hole x="2.54" y="2.54" drill="0.35"/>
+<hole x="2.54" y="0" drill="0.35"/>
+<hole x="2.54" y="-2.54" drill="0.35"/>
+<rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RASPBERRY-PI">
@@ -649,6 +664,18 @@
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ENCODER_A6B2-CWZ3E-1024">
+<pin name="BLACK_OUTA" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="WHITE_OUTB" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="ORANGE_OUTZ" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="BROWN" x="-22.86" y="5.08" length="middle"/>
+<pin name="BLUE_0V" x="-22.86" y="0" length="middle"/>
+<pin name="SMELD_GND" x="-22.86" y="-5.08" length="middle"/>
+<wire x1="-17.78" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -858,6 +885,26 @@ The GPIO Connector (P5):&lt;br&gt;
 <connect gate="G$1" pin="LDS_RX" pad="P$4"/>
 <connect gate="G$1" pin="LDS_TX" pad="P$5"/>
 <connect gate="G$1" pin="PWR" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ENCODER_A6B2">
+<gates>
+<gate name="G$1" symbol="ENCODER_A6B2-CWZ3E-1024" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ENCODER_A6B2">
+<connects>
+<connect gate="G$1" pin="BLACK_OUTA" pad="P$1"/>
+<connect gate="G$1" pin="BLUE_0V" pad="P$2"/>
+<connect gate="G$1" pin="BROWN" pad="P$3"/>
+<connect gate="G$1" pin="ORANGE_OUTZ" pad="P$4"/>
+<connect gate="G$1" pin="SMELD_GND" pad="P$5"/>
+<connect gate="G$1" pin="WHITE_OUTB" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>

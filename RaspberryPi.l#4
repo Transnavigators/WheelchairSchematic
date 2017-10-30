@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -601,17 +601,17 @@
 <pin name="GND@P5_8" x="27.94" y="-27.94" length="middle" rot="R180"/>
 </symbol>
 <symbol name="BERRYIMU">
-<pin name="CSB*" x="-15.24" y="7.62" length="middle"/>
+<pin name="CSB*" x="-15.24" y="2.54" length="middle"/>
 <pin name="VDD" x="-15.24" y="0" length="middle"/>
-<pin name="VDDIO" x="-15.24" y="-7.62" length="middle"/>
-<pin name="SDO*" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="VDDIO" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDO*" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="15.24" length="middle" rot="R270"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="10.16" length="middle" rot="R270"/>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MONSTERMOTO">
 <pin name="OUTA1" x="-10.16" y="25.4" length="middle" rot="R270"/>
@@ -666,16 +666,16 @@
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 <symbol name="ENCODER_A6B2-CWZ3E-1024">
-<pin name="BLACK_OUTA" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="BLACK_OUTA" x="20.32" y="2.54" length="middle" rot="R180"/>
 <pin name="WHITE_OUTB" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="ORANGE_OUTZ" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="BROWN" x="-22.86" y="5.08" length="middle"/>
+<pin name="ORANGE_OUTZ" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="BROWN_VCC" x="-22.86" y="2.54" length="middle"/>
 <pin name="BLUE_0V" x="-22.86" y="0" length="middle"/>
-<pin name="SMELD_GND" x="-22.86" y="-5.08" length="middle"/>
-<wire x1="-17.78" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<pin name="SMELD_GND" x="-22.86" y="-2.54" length="middle"/>
+<wire x1="-17.78" y1="5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="-17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-5.08" x2="-17.78" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -901,7 +901,7 @@ The GPIO Connector (P5):&lt;br&gt;
 <connects>
 <connect gate="G$1" pin="BLACK_OUTA" pad="P$1"/>
 <connect gate="G$1" pin="BLUE_0V" pad="P$2"/>
-<connect gate="G$1" pin="BROWN" pad="P$3"/>
+<connect gate="G$1" pin="BROWN_VCC" pad="P$3"/>
 <connect gate="G$1" pin="ORANGE_OUTZ" pad="P$4"/>
 <connect gate="G$1" pin="SMELD_GND" pad="P$5"/>
 <connect gate="G$1" pin="WHITE_OUTB" pad="P$6"/>
