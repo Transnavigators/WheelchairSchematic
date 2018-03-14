@@ -366,21 +366,15 @@
 <hole x="-41.67" y="0.295" drill="2.9"/>
 </package>
 <package name="BERRYIMU">
-<rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="21"/>
-<hole x="-2.54" y="-2.54" drill="0.35"/>
-<hole x="-2.54" y="2.54" drill="0.35"/>
-<hole x="2.54" y="2.54" drill="0.35"/>
-<hole x="2.54" y="-2.54" drill="0.35"/>
+<rectangle x1="-3.81" y1="-5.08" x2="3.81" y2="2.54" layer="21"/>
 <hole x="2.54" y="0" drill="0.35"/>
+<hole x="-2.54" y="-2.54" drill="0.35"/>
+<hole x="2.54" y="-2.54" drill="0.35"/>
 <hole x="-2.54" y="0" drill="0.35"/>
-<hole x="0" y="2.54" drill="0.35"/>
-<pad name="P$1" x="-2.54" y="-2.54" drill="0.6" shape="square"/>
 <pad name="P$2" x="-2.54" y="0" drill="0.6" shape="square"/>
-<pad name="P$3" x="-2.54" y="2.54" drill="0.6" shape="square"/>
-<pad name="P$4" x="0" y="2.54" drill="0.6" shape="square"/>
-<pad name="P$5" x="2.54" y="2.54" drill="0.6" shape="square"/>
-<pad name="P$6" x="2.54" y="0" drill="0.6" shape="square"/>
-<pad name="P$7" x="2.54" y="-2.54" drill="0.6" shape="square"/>
+<pad name="P$5" x="2.54" y="0" drill="0.6" shape="square"/>
+<pad name="P$6" x="2.54" y="-2.54" drill="0.6" shape="square"/>
+<pad name="P$7" x="-2.54" y="-2.54" drill="0.6" shape="square"/>
 </package>
 <package name="MONSTERMOTO">
 <rectangle x1="-15.24" y1="-15.24" x2="15.24" y2="20.32" layer="21"/>
@@ -668,17 +662,14 @@
 <pin name="GND@P5_8" x="27.94" y="-27.94" length="middle" rot="R180"/>
 </symbol>
 <symbol name="BERRYIMU">
-<pin name="CSB*" x="-15.24" y="2.54" length="middle"/>
 <pin name="VDD" x="-15.24" y="0" length="middle"/>
-<pin name="VDDIO" x="-15.24" y="-2.54" length="middle"/>
-<pin name="SDO*" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<pin name="SCL" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<wire x1="-10.16" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MONSTERMOTO">
 <pin name="OUTA1" x="-10.16" y="25.4" length="middle" rot="R270"/>
@@ -918,13 +909,10 @@ The GPIO Connector (P5):&lt;br&gt;
 <devices>
 <device name="" package="BERRYIMU">
 <connects>
-<connect gate="G$1" pin="CSB*" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$7"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
 <connect gate="G$1" pin="SCL" pad="P$5"/>
 <connect gate="G$1" pin="SDA" pad="P$6"/>
-<connect gate="G$1" pin="SDO*" pad="P$4"/>
-<connect gate="G$1" pin="VDD" pad="P$2"/>
-<connect gate="G$1" pin="VDDIO" pad="P$3"/>
+<connect gate="G$1" pin="VDD" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -1,49 +1,13 @@
 [Eagle]
-Version="08 03 01"
+Version="07 03 00"
 Platform="Windows"
+Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="P:/eagle/Capstone/RaspberryPi.lbr"
-UsedLibrary="P:/eagle/Capstone/LM2576.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun.lbr"
-UsedLibrary="P:/eagle/Capstone/LilyPad-Wearables.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Aesthetics.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Batteries.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Boards.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Capacitors.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Clocks.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Coils.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Connectors.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-DiscreteSemi.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Displays.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Electromechanical.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Fuses.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-GPS.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Hardware.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Amplifiers.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Comms.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Conversion.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Logic.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Memory.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Microcontroller.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Power.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-IC-Special-Function.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Jumpers.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-LED.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-PowerSymbols.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Resistors.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Retired.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-RF.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Sensors.lbr"
-UsedLibrary="P:/eagle/Capstone/SparkFun-Switches.lbr"
-UsedLibrary="P:/eagle/Capstone/User-Submitted.lbr"
-UsedLibrary="P:/eagle/Capstone/MonsterMoto-Shield-v12.lbr"
-UsedLibrary="P:/eagle/ee2parts/ee2parts.lbr"
 UsedLibrary="RaspberryPi.lbr"
-UsedLibrary="LM2576.lbr"
 
 [Win_1]
 Type="Control Panel"
@@ -52,5 +16,5 @@ State=1
 Number=0
 
 [Desktop]
-Screen="1264 633"
+Screen="1600 900"
 Window="Win_1"
